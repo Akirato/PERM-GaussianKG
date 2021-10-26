@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main_gaussian.py --cuda --do_train --do_valid --do_test   --data_path data/FB15K-237 -n 128 -b 512 -d 400 -g 24   -lr 0.0001 --max_steps 200001 --cpu_num 4 --geo gaussian --valid_steps 15000   -gaussianm "(none,0.02)" --tasks "1p.2p.3p.2i.3i.ip.pi.2u.up"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main_gaussian.py --cuda --do_train --do_valid --do_test   --data_path data/NELL -n 128 -b 512 -d 400 -g 24   -lr 0.0001 --max_steps 200001 --cpu_num 4 --geo gaussian --valid_steps 15000   -gaussianm "(none,0.02)" --tasks "1p.2p.3p.2i.3i.ip.pi.2u.up"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main_gaussian.py --cuda --do_train --do_valid --do_test   --data_path data/DRKG -n 128 -b 512 -d 400 -g 24   -lr 0.0001 --max_steps 200001 --cpu_num 4 --geo gaussian --valid_steps 15000   -gaussianm "(none,0.02)" --tasks "1p.2p.3p.2i.3i.ip.pi.2u.up"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main_gaussian.py --cuda --do_train --do_valid --do_test   --data_path data/DBPedia -n 128 -b 512 -d 400 -g 24   -lr 0.0001 --max_steps 200001 --cpu_num 4 --geo gaussian --valid_steps 15000   -gaussianm "(none,0.02)" --tasks "1p.2p.3p.2i.3i.ip.pi.2u.up"
+
